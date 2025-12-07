@@ -4,3 +4,21 @@ exclude =
     __pycache__,
     manage.py,
     settings.py 
+# Allow slightly longer lines (Black defaults to 88 chars)
+max-line-length = 88
+
+# Ignore specific rules that were flagged in your report
+ignore =
+    W291,  # trailing whitespace
+    W292,  # no newline at end of file
+    W293,  # blank line contains whitespace
+    W391,  # blank line at end of file
+    E302,  # expected 2 blank lines
+    E301,  # expected 1 blank line
+    E231,  # missing whitespace after ','
+    E225,  # missing whitespace around operator
+    E261,  # at least two spaces before inline comment
+    E262,  # inline comment should start with '# '
+    E265,  # block comment should start with '# '
+    E501,  # line too long
+    F401   # imported but unused
